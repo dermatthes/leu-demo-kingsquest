@@ -1,12 +1,12 @@
 
-name: Zahnarztpraxis Sedlmaier
-contact: Oksana Sedlmaier
-street: Karlsplatz 4 (Stachus)
-city: 80335 München
-phone: "+4989525776"
-phone_text: 089 - 52 57 76
-fax1_text: 089 - 54 20 834
-email: info@zahnarztpraxis-sedlmaier.de
+name: Leuffen.de
+contact: Matthias Leuffen
+street: Mathildenstr. 9-11
+city: 45130 Essen
+phone: "+4920175859936"
+phone_text: (0201) 7 58 59 936
+fax1_text: (0201) 7 58 59 936
+email: kontakt@leuffen.de
   
 tools:
   recaptcha: true

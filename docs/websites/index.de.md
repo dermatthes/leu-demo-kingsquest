@@ -7,5 +7,5 @@ permalink: /
 pid: websites/index
 ptags: []
 published: true
-title: 'Zahnarztpraxis Sedlmaier '
+title: 'Zahnarztpraxis Kingsquest '
 ---

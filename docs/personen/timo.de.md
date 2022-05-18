@@ -4,8 +4,9 @@ image: ~
 lang: de
 layout: pages/article/person
 order: 3
-pers_name: Melanie
-pid: personen/melanie
+image: assets/user/dentist3.jpg
+pers_name: Timo Mustermann
+pid: personen/timo
 profession: Assistenz Prophylaxe
 ptags:
 - sec-team

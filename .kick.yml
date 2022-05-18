@@ -14,6 +14,7 @@ command:
 
   resize_images:
     - 'find /opt/docs/assets/img -type f -exec mogrify -resize 1920x920^\> {} \;'
+    - 'find /opt/docs/assets/user -type f -exec mogrify -quality 80 -resize 1920x920^\> {} \;'
 
   jekyll: |
     JEKYLL_LOG_LEVEL=info jekyll serve -s /opt/docs -d /var/www/html --drafts --livereload --port 4000 --livereload-port 4100 --host 0.0.0.0

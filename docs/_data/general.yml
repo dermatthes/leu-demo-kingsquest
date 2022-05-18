@@ -1,32 +1,29 @@
-pagebuilder: https://pagebuilder.leuffen.de/e/sedlmaier/default
-subscription_id: sedlmaier
+pagebuilder: https://pagebuilder.leuffen.de/e/demo-kingsquest/default
+subscription_id: leuffen-demo
 
-title: Zahnarztpraxis Sedlmaier
-name: Zahnarztpraxis Sedlmaier
-site_base_url: https://sedlmaier.demo.leuffen.de
+title: Zahnarztpraxis Kingsquest
+name: Zahnarztpraxis Kingsquest
+site_base_url: https://kingsquest.demo.leuffen.de
 #logourl_alpha: /assets/logo-alpha.png
 #logourl_navi_alpha: /assets/logo-alpha.png
 
-logourl_alpha: assets/sedlmaier-alpha.png
-logourl_alpha_style: "width:14%;min-width:120px;"
-logourl_navi_alpha: assets/sedlmaier-navi.png
-favicon: assets/sedlmaier-icon.png
+logourl_alpha: assets/logo-alpha.png
+logourl_alpha_style: "width:12%;min-width:100px;"
+logourl_navi_alpha: assets/logo-alpha.png
+favicon: assets/logo-alpha.png
 
-logoalt: Zahnarztpraxis Sedlmaier
-street: Karlsplatz 4
+logoalt: Zahnarztpraxis Kingsquest
+street: Mathildenstr. 9-11
 
-zip: 80335
-city: München
+zip: 45130
+city: Essen
 mapurl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.460448132023!2d11.564537415770234!3d48.13992765897593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f6dacd4637%3A0xfa0f23db8f1dd982!2sKarlspl.%204%2C%2080335%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1649341348745!5m2!1sde!2sde"
 maplink: "https://goo.gl/maps/uQVp724aitWrxngs7"
 maplink_mobile: "https://www.google.de/maps/place/Karlspl.+4,+80335+M%C3%BCnchen/@48.1399277,11.5645374,17z/data=!3m1!4b1!4m5!3m4!1s0x479e75f6dacd4637:0xfa0f23db8f1dd982!8m2!3d48.1399241!4d11.5667261"
 contact:
-  phone1_text: (089) 525 776
-  phone1: "+4989525776"
-  fax1_text: (089) 54 20 834
-  email: info@zahnarztpraxis-sedlmaier.de
-  domain: www.zahnarztpraxis-sedlmaier.de
+  phone1_text: (0201) 7 58 59 936
+  phone1: "+4920175859936"
+  fax1_text: (0201) 7 58 59 936
+  email: info@leuffen.de
+  domain: www.leuffen.de
 
-
-shortinfo: |
-  Bereits seit 2012 sind wir für Sie in der Münchener Altstadt vor Ort, direkt am Karlsplatz (Stachus). 

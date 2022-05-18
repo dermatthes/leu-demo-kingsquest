@@ -4,5 +4,5 @@ lang: ua
 layout: page/website/kingsquest
 pid: websites/index
 published: true
-title: стоматологічний кабінет Sedlmaier
+title: стоматологічний кабінет Kingsquest
 ---
