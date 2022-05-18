@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}" dir="">
+<head>
+    {% include html/head.html %}
+</head>
+
+<body style="min-height: 100%;overflow-x: auto">
+<!-- ========== HEADER ========== -->
+{% include html/navbar.html %}
+
+<!-- ========== END HEADER ========== -->
+
+<!-- ========== MAIN CONTENT ========== -->
+<main id="content " role="main" style="min-height: 100%; ">
+    <!-- Hero -->
+    {{ content }}
+    <!-- End Card Grid -->
+</main>
+<!-- ========== END MAIN CONTENT ========== -->
+
+<!-- ========== FOOTER ========== -->
+{% include html/footer.html %}
+<!-- ========== END FOOTER ========== -->
+
+<!-- ========== SECONDARY CONTENTS ========== -->
+<!-- Go To -->
+{% include html/script.html %}
+{% include html/cookie-consent.html %}
+</body>
+</html>

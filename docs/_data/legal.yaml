@@ -1,0 +1,15 @@
+
+name: Zahnarztpraxis Sedlmaier
+contact: Oksana Sedlmaier
+street: Karlsplatz 4 (Stachus)
+city: 80335 München
+phone: "+4989525776"
+phone_text: 089 - 52 57 76
+fax1_text: 089 - 54 20 834
+email: info@zahnarztpraxis-sedlmaier.de
+  
+tools:
+  recaptcha: true
+  webfonts: true
+  googlemaps: true
+  jameda: true

@@ -1,0 +1,28 @@
+// user-variables.scss
+// Use this to overwrite Bootstrap and Unify variables
+//
+
+@font-face {
+  font-family: 'asenine';
+  src: url('/assets/font/ASENINE_.ttf');
+}
+
+// Example of a variable override to change Unify's primary color and font size
+// Remove the "//" to comment it in and see it in action!
+
+$link-color: #e11c24;
+$dark: #424242;
+
+// $font-size-base: 1rem;
+
+
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+
+
+$font-family-base:                                          "Inter", sans-serif !default;
+
+$font-size-base:                                            1.05rem !default; // Assumes the browser default, typically `16px`
+$font-size-xs:                                              .75rem !default;
+$font-size-sm:                                              .8125rem !default;
+$font-size-lg:                                              1.125rem !default;

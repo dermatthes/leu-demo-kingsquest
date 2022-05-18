@@ -1,0 +1,25 @@
+<section id="team" class="bg-white">
+    <div class="container content-space-3">
+        <!-- Heading -->
+        <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7 mb-lg-10">
+            <h2 class="fs-2">{% include do/trans.html val="Wir helfen Ihnen" %}</h2>
+        </div>
+        <!-- End Heading -->
+        <div class="row">
+            {% assign teams = site.pages |  where: "ptags", "sec-team" | where: "lang", page.lang | sort: "order" %}
+            {% for team in teams %}
+            <article class="col-md-4 p-4">
+                <div class="ratio ratio-4x3 overflow-hidden bg-light" style="background-image: url({{ team.image }}); background-size: contain; background-repeat: no-repeat;background-position: center top">
+
+                </div>
+                <h5 class="mt-3">{{ team.profession }}</h5>
+                {% assign curContent = team.content | strip %}
+                <h5 class="mt-3">{% if curContent != '' %}<a href="{{ site.baseurl }}{{ team.url }}">{{ team.pers_name }}</a>{% else %}{{team.pers_name}}{% endif %}</h5>
+                <p>
+                    {{ team.short_desc }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

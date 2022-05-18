@@ -1,0 +1,11 @@
+version: "3"
+services:
+  pagebuilder:
+    image: ghcr.io/micx-io/micx-pagebuilder:unstable
+    environment:
+      STANDALONE: 1
+      STANDALONE_PATH: /data
+    ports:
+      - 5000:80
+    volumes:
+      - ./:/data

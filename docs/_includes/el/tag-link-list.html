@@ -1,0 +1,8 @@
+<!-- tag-link-list: tag='{{ include.ptag }}' limit='{{ include.limit }}' -->
+{% assign navi2 = site.pages | where: "lang", page.lang | where: "ptags", include.ptag | sort: "order" %}
+{% for it in navi2 %}
+    <a class="{{ include.class }}" href="{{ site.baseurl }}{{ it.url }}">
+        <i class="{% if it.navi_icon != null %}{{ it.navi_icon }}{% else %}{{ site.data.style.default_icon_class }}{% endif %} pe-2"></i>
+        {% if it.navi_name %}{{ it.navi_name }}{% else %}{{ it.title }}{% endif %}
+    </a>
+{% endfor %}

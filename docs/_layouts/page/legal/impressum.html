@@ -1,0 +1,46 @@
+---
+layout: trunk/unify
+permalink: /impressum/
+title: Impressum und AGB
+description:
+---
+<!-- Content -->
+<section class="content-space-t-4 content-space-b-2">
+    <div class="container">
+        <h1 class="card-title text-center m-4 fs-2">Impressum</h1>
+        <!-- Card -->
+
+        <p class="fs-3">{{ site.data.legal.name}}</p>
+        <p >
+            {{site.data.legal.street}}<br>
+            {{site.data.legal.city}}<br><br>
+            Telefon: <a href="tel:{{site.data.legal.phone}}">{{site.data.legal.phone_text}}</a><br>
+            {% if site.data.legal.fax1_text %}
+                Telefax: {{site.data.legal.fax1_text}}<br>
+            {% endif %}
+            <a href="tel:{{site.data.legal.email}}" >{{site.data.legal.email}}</a><br>
+
+        </p>
+        <!-- End Card -->
+    </div>
+</section>
+<section class=" content-space-2 bg-light">
+    <div class="container">
+        {{ content }}
+
+        <!-- End Card -->
+    </div>
+</section>
+
+<section class=" content-space-2">
+    <div class="container">
+
+        <p class="fs-3">Design und Umsetzung</p>
+        <a href="https://leuffen.de/"><img style="width: 150px;margin-left:-10px" src="/assets/leuffen-logo-big.svg" alt="leuffen.de logo"></a>
+
+        <p class="mt-2">leuffen.de<br>Webprogrammierung & Webservices</p>
+        <a href="https://leuffen.de/arzt-praxis-website/" target="_blank" class="link-pointer">Websites für Zahnärzte</a>
+        <!-- End Card -->
+    </div>
+</section>
+<!-- End Content -->

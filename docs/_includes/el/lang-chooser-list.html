@@ -1,0 +1,16 @@
+<div class="btn-group btn-group-sm" style="" id="langchooser">
+    {% for _lang in site.data.languages %}
+        {% assign _page = site.pages | where: "pid", page.pid | where: "lang", _lang.lang | first %}
+    <a class="btn btn-outline-light p-md-2 {% if _page.lang == page.lang %}active{% endif %} {% if _page == null %}disabled{% endif %}" href="{{ site.baseurl }}{{ _page.url }}">
+        <img class="border border-dark" src="assets/ico/flags/4x3/{{ _lang.flag }}.svg" alt="{{ _lang.name }}" width="16" style="">
+    </a>
+    {% endfor %}
+</div>
+<style>
+    #langchooser img {
+        opacity: 0.5;
+    }
+    #langchooser .active img {
+        opacity: 1;
+    }
+</style>

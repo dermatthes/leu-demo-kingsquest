@@ -1,0 +1,42 @@
+<section class="bg-dark">
+
+    <div id="carousel1" class="carousel slide container" data-bs-ride="carousel" style="min-height: 290px;max-height: 600px;overflow: hidden">
+        <div class="carousel-inner">
+            {% for item in site.data.carousel.items %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="{{ site.data.carousel.interval }}">
+
+                    <img src="{{ site.baseurl }}{{ item.src }}" class="d-block w-100" alt="{{ item.alt }}">
+                    {% if item.caption != null %}
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>{{ item.caption }}</h5>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="carousel-indicators">
+            {% assign first = true %}
+            {% for item in site.data.carousel.items %}
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="{{ forloop.index0 }}" class="{%  if forloop.first %}active{% endif %}" aria-current="true" aria-label="Slide 1"></button>
+            {% endfor %}
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", ()=>{
+        console.log("carousel")
+        // new bootstrap.Carousel(document.querySelector("#carousel1"));
+    })
+</script>

@@ -1,0 +1,32 @@
+desc: Übersichtseiten, Standards
+ptags:
+  - text: In Landing-Navigation anzeigen
+    key: navi-landings
+  - text: In Footer-Navigation anzeigen
+    key: navi-footer
+is_sortable: false
+
+layouts:
+  - layout: page/section/anfahrt
+    text: Anfahrtsbeschreibung
+  - layout: page/section/kontakt
+    text: Kontaktseite
+  - layout: page/section/team
+    text: Teamübersicht
+  - layout: page/section/leistungen
+    text: Leistungen
+forms:
+  - key: navi_name
+    type: text
+    name: Titel in der Navigation
+    title: Wenn der Page-Tag In Navigationsleiste anzeigen aktiv ist, diesen wert als Titel nehmen. (Max. 30 Zeichen)
+    attrs:
+      maxlength: 30
+
+  - key: navi_icon
+    type: text
+    name: Navigation-Icon
+    title: Icon in der Navigation
+
+defaults:
+  layout: xy

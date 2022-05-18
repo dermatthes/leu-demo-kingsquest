@@ -1,0 +1,10 @@
+{mail to="donlusso58@web.de" name="Robert Sedlmaier"}
+{mail from="no-reply@ws.micx.io" name="leuffen.de webservices"}
+{mail replyto=email name=name}
+{mail charset="utf-8"}
+{subject}Online Terminanfrage von {=vorname} {=nachname}{/subject}
+
+Terminanfrage:
+--------------
+
+{=__DATA__}

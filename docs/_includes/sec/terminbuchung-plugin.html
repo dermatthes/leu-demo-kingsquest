@@ -1,0 +1,90 @@
+<script type="module">
+
+    KaToolsV1.provider.define("openHours", () => {
+        let oh = new KaToolsV1.openhours();
+        document.openhours.vacation.forEach((item) => oh.addVacation(item.from, item.till));
+        document.openhours.json.forEach((item) => {
+            console.log(item);
+            oh.addOpenHours(parseInt(item.dayOfWeek), item.from, item.till)
+        });
+
+        return oh;
+    });
+
+    (async ()=>{
+        await KaToolsV1.domReady();
+
+        let tplOrig = KaToolsV1.querySelector("#vacationModal1");
+        let tpl = KaToolsV1.templatify(tplOrig);
+        tplOrig.parentElement.append(tpl);
+
+        let vac = get_vacation();
+        if (vac === null)
+            return;
+
+        let renderer = new KaV1Renderer(tpl);
+        let scope = {
+            vacation: vac
+        }
+
+        renderer.render(scope);
+        let modal = new bootstrap.Modal(scope.$ref.modal);
+        modal.show();
+    })();
+</script>
+
+<div id="termin" class="d-block w-100 bg-dark bg-soft-dark-to-start-75 p-4 text-center" style="border-radius: 0" >
+    <div class="container">
+        <div class="alert alert-soft-info">
+            <leu-isopen></leu-isopen>
+        </div>
+        <button class="btn btn-primary fs-3" data-bs-toggle="collapse" data-bs-target="#terminbuchung1">{% include do/trans.html val="Jetzt Termin online vereinbaren" %}
+        <i class="bi bi-calendar3"></i></button>
+    </div>
+</div>
+<section class="bg-soft-secondary collapse" id="terminbuchung1">
+    <div class="container pt-5 ps-5 pe-5 pb-3">
+        <form method="post">
+            <micx-formmail
+                preset="terminanfrage"
+                onwaiting="this.show(`*[role='status']`)"
+                onsubmit="console.log('submit');this.hide(`button[type='submit'],*[role='data_invalid']`);this.show(`*[role='success']`);this.parentElement.reset()"
+                oninvalid="this.show(`*[role='data_invalid']`)"
+                onerror="alert('Server error. Sending mail failed. Please try again later.\nIhre Nachricht konnte aufgrund eines Serverfehlers nicht zugestellt werden.');"
+                debug="yes">
+                Die Terminanfrage ist nicht verfügbar
+            </micx-formmail>
+            <script src="https://ws.micx.io/v1/formmailer/formmail.js?subscription_id={{ site.data.general.subscription_id }}" defer></script>
+            <leu-termin></leu-termin>
+        </form>
+
+        <div class="mt-5 text-end text-muted fs-5">Online-Termin von<a href="https://leuffen.de/"><img src="/assets/leuffen-logo-big.svg" style="height: 18px; margin-top:-6px;" alt="leuffen"></a></div>
+
+    </div>
+
+</section>
+
+
+
+<template id="vacationModal1">
+
+        <div kap:ref="'modal'" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">[[leu_translate(vacation.title)]]</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>[[leu_translate(vacation.text)]]</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</template>
+
+

@@ -1,0 +1,23 @@
+<section id="anfahrt" class=" content-space-3">
+    <div class="container">
+        <h1 class="text-center fs-2 mb-5">{% include do/trans.html val="Anfahrt" %}</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>{% include do/trans.html val="Mit der U-Bahn" %}</h4>
+                <p>
+                    {% include do/trans.html val="§Anfahrtbeschreibung U-Bahn" %}
+
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h4>{% include do/trans.html val="Mit dem Auto" %}</h4>
+                <p>
+                    {% include do/trans.html val="§Anfahrtbeschreibung Auto" %}
+                </p>
+                <a class="" leu-if="leuIsMobileDevice()" href="{{ site.data.general.maplink_mobile }}" target="_blank"><i class="bi bi-map me-2"></i> {% include do/trans.html val="In Routenplaner-App öffnen" %}</a>
+                <a class="" leu-if="! leuIsMobileDevice()" href="{{ site.data.general.maplink }}" target="_blank"><i class="bi bi-map me-2"></i> {% include do/trans.html val="In Google Maps öffnen" %}</a>
+            </div>
+        </div>
+
+    </div>
+</section>

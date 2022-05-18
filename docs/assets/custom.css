@@ -1,0 +1,17 @@
+
+
+
+.leu-image-colorize {
+    display: inline-block;
+    position: relative;
+    height: auto;
+    background-image: linear-gradient(to bottom, white -70%, #8C98A4 150%);
+}
+
+.leu-image-colorize img {
+    filter: grayscale(100%);
+    mix-blend-mode: lighten;
+    opacity: 80%;
+}
+
+

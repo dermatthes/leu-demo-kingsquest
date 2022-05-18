@@ -1,0 +1,50 @@
+<section class="mt-3 mb-3">
+    <h4>[[leu_translate('Termin vereinbaren')]]</h4>
+    <div class="form-floating" ka:if="step > 0">
+        <select class="form-select mt-3" id="floatingSelectGrid" name="termingrund" kap:options="gruende" kap:bind="data.grund">
+        </select>
+        <label for="floatingSelectGrid">[[leu_translate('Termingrund')]]</label>
+    </div>
+
+    <div class="" ka:if="step > 1">
+        <h4 class="mt-5">[[leu_translate('Ihre Terminvorschläge')]]</h4>
+        <div class="m-2">
+        <leu-calendar  kap:bind="data.termine">
+        </leu-calendar></div>
+    </div>
+    <div ka:if="step > 2">
+        <input ka:for="let curTermin in data.termine" type="hidden" name="termin[]" kap:attr:value="KaToolsV1.date.date('Y-m-d', curTermin) + ' ' + data.termine[curTermin]">
+        <h4 class="mt-5">[[leu_translate('Ihre Kontaktdaten')]]</h4>
+        <div class="form-floating mt-3">
+          <input name="vorname" type="text" class="form-control" id="floatingInputGrid" placeholder="" required>
+          <label for="floatingInputGrid">[[leu_translate('Vorname')]] *</label>
+        </div>
+        <div class="form-floating mt-3">
+            <input name="nachname" type="text" class="form-control" id="floatingInputGrid" placeholder="" required>
+            <label for="floatingInputGrid">[[leu_translate('Nachname')]] *</label>
+        </div>
+        <div class="form-floating mt-3">
+            <input name="telefon" type="tel" class="form-control" id="floatingInputGrid" placeholder="0123-56789" required>
+            <label for="floatingInputGrid">[[leu_translate('Telefon')]] *</label>
+        </div>
+        <div class="form-floating mt-3">
+            <input name="email" type="email" class="form-control" id="floatingInputGrid" placeholder="" required>
+            <label for="floatingInputGrid" kap:textContent="leu_translate('E-Mail') + '*'"></label>
+        </div>
+        <div class="form-floating mt-3">
+            <textarea name="nachricht" type="email" class="form-control" id="floatingInputGrid" placeholder=""></textarea>
+            <label for="floatingInputGrid" kap:textContent="leu_translate('Ihre Nachricht')"></label>
+        </div>
+        <div class="alert alert-success mt-4" hidden role="success">[[ leu_translate('Ihre Nachricht wurde zugestellt. Wir melden uns in den nächsten Tagen bei Ihnen.')]]</div>
+        <div class="alert alert-danger mt-4" hidden role="data_invalid">[[ leu_translate('Es wurden nicht alle erforderlichen Eingabefelder ausgefüllt')]]</div>
+        <div class="d-grid mb-2">
+
+            <button type="submit" micx-wa-conversion="terminanfrage" class="btn btn-primary mt-3 mb-3">
+                <span class="spinner-border spinner-border-sm" role="status" hidden aria-hidden="true"></span> [[leu_translate('Absenden')]]
+            </button>
+        </div>
+
+
+    </div>
+
+</section>

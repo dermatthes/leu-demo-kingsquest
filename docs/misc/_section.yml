@@ -1,0 +1,22 @@
+desc: Diverse Seiten
+ptags:
+  - text: In Misc-Navigation anzeigen
+    key: navi-misc
+  - text: In Footer-Navigation anzeigen
+    key: navi-footer
+is_sortable: true
+
+layouts:
+  - layout: page/article/misc
+    text: Misc Pages
+
+forms:
+  - key: navi_name
+    type: text
+    name: Navigationstitel
+    title: Titel in der Navigation (Max. 30 Zeichen)
+    attrs:
+      maxlength: 30
+
+defaults:
+  layout: xy

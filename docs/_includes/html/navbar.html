@@ -1,0 +1,65 @@
+
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-light navbar-absolute-top navbar-show-hide"
+        data-hs-header-options='{
+            "fixMoment": 0,
+            "fixEffect": "slide"
+          }'>
+    <div class="container">
+        <nav class="js-mega-menu navbar-nav-wrap">
+            <!-- Default Logo -->
+            <div class="start-0 position-absolute top-0 end-0">
+                <a class="col-md-4 text-center d-lg-none d-block hide-untransistioned" href="{% include do/link.html pid='websites/index' %}" aria-label="{{ site.data.general.logoalt }}">
+                    <img class="" src="{{ site.data.general.logourl_navi_alpha }}" style="max-height: 48px;margin-top:-8px;" alt="{{ site.data.general.logoalt }}">
+                </a>
+            </div>
+            <!-- End Default Logo -->
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-default"><i class="bi-list"></i></span>
+                <span class="navbar-toggler-toggled"><i class="bi-x"></i></span>
+            </button>
+            <!-- End Toggler -->
+
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="navbar-absolute-top-scroller">
+                    <ul class="navbar-nav nav-pills row">
+
+
+                        {% include html/megamenu/mega-menu-praxis.html %}
+                        {% include html/megamenu/mega-menu-leistungen.html %}
+
+
+                        <a class="col-md-4 text-center d-none d-lg-block hide-untransistioned" href="{% include do/link.html pid='websites/index' %}" aria-label="{{ site.data.general.logoalt }}">
+                            <img class="" src="{{ site.data.general.logourl_navi_alpha }}" alt="{{ site.data.general.logoalt }}" style="margin-left:-24px; max-height: 48px">
+                        </a>
+
+
+                        <li class="  col-md-2 ">
+                            <!--a class="hs-mega-menu-invoker nav-link text-center" rel="nofollow" href="/kontakt/">Kontakt</--a-->
+                        </li>
+                        <div class="col-md-2 pe-0">
+                            {% include el/lang-chooser-list.html %}
+                        </div>
+                        <!-- End Sign up -->
+                    </ul>
+                </div>
+            </div>
+            <!-- End Collapse -->
+        </nav>
+    </div>
+</header>
+<style>
+    .navbar-scrolled .hide-untransistioned {
+        opacity: 1;
+    }
+    .hide-untransistioned {
+        opacity: 0;
+    }
+</style>
+
+<div class="container position-absolute end-0 start-0" style="z-index: 1;">
+    <div class="text-center position-absolute start-50 bg-transparent" style="background-color: transparent; {{ site.data.general.logourl_alpha_style }}">
+        <a href="{% include do/link.html pid='websites/index' %}" class=""><img class="mt-2" src="{{ site.data.general.logourl_alpha }}" style="width: 100%;margin-left:-100%;" alt="{{ site.data.general.logoalt }}"></a>
+    </div>
+</div>

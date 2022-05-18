@@ -1,0 +1,129 @@
+<section class="bg-light position-relative">
+    <div class="d-none d-lg-block w-50 bottom-0 top-0 position-absolute overflow-hidden">
+        <img src="assets/img/anmeldung.jpg" class="h-100">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-lg-6"></div>
+            <div class="col-12 col-lg-6 align-self-end p-4">
+                <form method="POST">
+                    <micx-formmail
+                        preset="anfrage"
+                        onwaiting="this.show(`*[role='status']`)"
+                        onsubmit="console.log('submit');this.hide(`button[type='submit'],*[role='data_invalid']`);this.show(`*[role='success']`);this.parentElement.reset()"
+                        oninvalid="this.show(`*[role='data_invalid']`)"
+                        onerror="alert('Server error. Sending mail failed. Please try again later.\nIhre Nachricht konnte aufgrund eines Serverfehlers nicht zugestellt werden.');"
+                        debug="yes">
+                        E-Mail Funktion z.Zt. offline!
+                    </micx-formmail>
+                    <script src="https://ws.micx.io/v1/formmailer/formmail.js?subscription_id={{ site.data.general.subscription_id }}" defer></script>
+                    <div class="row">
+                        <div class="col-sm-6 mb-4 mb-sm-0">
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label class="form-label" for="contactsFormFirstName">{% include do/trans.html val="Vorname" %} *</label>
+                                <input type="text" class="form-control" name="vorname" id="contactsFormFirstName" placeholder="{% include do/trans.html val="Vorname" %}" aria-label="{% include do/trans.html val="Vorname" %}" required>
+                            </div>
+                            <!-- End Form -->
+                        </div>
+                        <!-- End Col -->
+
+                        <div class="col-sm-6">
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label class="form-label" for="contactsFormLasttName">{% include do/trans.html val="Nachname" %} *</label>
+                                <input type="text" class="form-control" name="nachname" id="contactsFormLasttName" placeholder="{% include do/trans.html val="Nachname" %}" aria-label="{% include do/trans.html val="Nachname" %}" required>
+                            </div>
+                            <!-- End Form -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+
+                    <div class="row">
+                        <div class="col-sm-6 mb-4 mb-sm-0">
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label class="form-label" for="contactsFormCompany">{% include do/trans.html val="E-Mail" %} *</label>
+                                <input type="email" class="form-control" name="email" id="contactsFormCompany" placeholder="info@domain.de" aria-label="{% include do/trans.html val="E-Mail" %}" required>
+                            </div>
+                            <!-- End Form -->
+                        </div>
+                        <!-- End Col -->
+
+                        <div class="col-sm-6">
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label class="form-label" for="contactsFormCompanyWebsite">{% include do/trans.html val="Telefon" %} *</label>
+                                <input type="tel" class="form-control" name="telefon" id="contactsFormCompanyWebsite" placeholder="+49 1234 56789" aria-label="{% include do/trans.html val="Telefon" %}" required>
+                            </div>
+                            <!-- End Form -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                    <!-- Form -->
+                    <div class="mb-4">
+                        <label class="form-label" for="contactsFormDetails">{% include do/trans.html val="Ihre Nachricht" %} *</label>
+                        <textarea class="form-control" name="nachricht" id="contactsFormDetails" placeholder="" aria-label="{% include do/trans.html val="Ihre Nachricht" %}" rows="3"></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p>{% include do/trans.html val="Termin vereinbaren" %}</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="termin" value="Diese Woche" id="f1_termin_a" checked>
+                                <label class="form-check-label" for="f1_termin_a">
+                                    {% include do/trans.html val="Diese Woche" %}
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="termin" value="Später" id="f1_termin_b">
+                                <label class="form-check-label" for="f1_termin_b">
+                                    {% include do/trans.html val="Später" %}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <p>{% include do/trans.html val="Bitte kontaktieren Sie mich per" %}</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="kontakt" value="Telefon" id="f1_contact_a" checked>
+                                <label class="form-check-label" for="f1_contact_a">
+                                    {% include do/trans.html val="Telefon" %}
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="kontakt" value="E-Mail" id="f1_contact_b">
+                                <label class="form-check-label" for="f1_contact_b">
+                                    {% include do/trans.html val="E-Mail" %}
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Form -->
+                    <!-- Form -->
+                    <div class="mb-4 mt-4">
+                        <label class="form-label" for="termingrund">{% include do/trans.html val="Termingrund" %} *</label>
+                        <textarea class="form-control" name="termingrund" id="termingrund" placeholder="" aria-label="" rows="1" required></textarea>
+                    </div>
+                    <!-- End Form -->
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="datenschutz_akzeptiert" value="Ja" id="datenschutz_akzeptiert" required>
+                        <label class="form-check-label" for="datenschutz_akzeptiert">
+                            {% include do/trans.html val="Formular Datenschutz" %}
+                        </label>
+                    </div>
+                    <div class="alert alert-success mt-4" hidden role="success">{% include do/trans.html val="Ihre Nachricht wurde zugestellt. Wir melden uns in den nächsten Tagen bei Ihnen." %}</div>
+                    <div class="alert alert-danger mt-4" hidden role="data_invalid">{% include do/trans.html val="Es wurden nicht alle erforderlichen Eingabefelder ausgefüllt" %}</div>
+
+                    <div class="d-grid mt-3">
+                        <button type="submit" class="btn btn-primary btn-lg">{% include do/trans.html val="Absenden" %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>

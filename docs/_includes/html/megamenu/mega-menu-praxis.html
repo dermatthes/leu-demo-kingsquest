@@ -1,0 +1,33 @@
+<li class="hs-has-mega-menu col-md-2"
+    data-hs-mega-menu-item-options='{
+                            "desktop": {
+                              "maxWidth": "{{ menu.max_width }}"
+                            }
+                          }'>
+    <a id="landingsMegaMenu-praxis" class="hs-mega-menu-invoker nav-link dropdown-toggle text-center"
+       href="javascript:void(0)" aria-current="page" role="button" aria-expanded="false">
+        {% include do/trans.html val="Unsere Praxis" %}
+    </a>
+    <!-- add hs-position-right to align right -->
+    <div class="hs-mega-menu dropdown-menu" aria-labelledby="landingsMegaMenu-praxis" style="min-width: 600px;">
+        <!-- Main Content -->
+        <div class="row">
+
+            <div class="col-lg">
+                <div class="d-flex align-items-start flex-column bg-light rounded-3 h-100 p-4">
+
+                    {% include el/tag-link-list.html ptag='navi-landings' class="dropdown-item" %}
+
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="navbar-dropdown-menu-inner">
+                    <div class="m-3"></div>
+                    {% include el/tag-link-list.html ptag="navi-misc" class="dropdown-item" %}
+                </div>
+            </div>
+
+        </div>
+        <!-- End Main Content -->
+    </div>
+</li>

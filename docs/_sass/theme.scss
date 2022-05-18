@@ -1,0 +1,25 @@
+// Setup
+@import 'bootstrap-5.0.2/scss/functions';
+
+@import 'themes/default';
+@import 'user-variables';
+@import 'unify/variables';
+
+@import 'bootstrap-5.0.2/scss/variables';
+@import 'bootstrap-5.0.2/scss/utilities';
+
+@import 'unify/utilities';
+
+// Bootstrap core
+@import 'bootstrap-5.0.2/scss/bootstrap';
+
+/*----------------------------------------------------------------------
+  * Unify - Multipurpose Responsive Template version v1.0
+  * Copyright 2021 Htmlstream
+  * Licensed under Bootstrap Themes (https://themes.getbootstrap.com/licenses/)
+------------------------------------------------------------------------*/
+
+@import 'unify/unify';
+
+// Custom core
+@import 'user';

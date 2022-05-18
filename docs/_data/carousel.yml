@@ -1,0 +1,8 @@
+interval: 6000
+items:
+  - src: /assets/user/zahnarzt-sedlmaier-roentgenraum.png
+    alt: Röntgenraum
+    caption: "Röntgenraum"
+  - src: /assets/user/zahnarzt-sedlmaier-empfang.png
+    alt: Empfang
+  - src: /assets/user/zahnarzt-sedlmaier-prohylaxeraum.png

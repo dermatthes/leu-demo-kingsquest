@@ -1,0 +1,38 @@
+desc: Leistungen und Angebote
+ptags:
+  - text: In Leistungen-Navi anzeigen
+    key: navi-leistungen
+  - text: In Leistungen-Sektion anzeigen
+    key: sec-leistungen
+is_sortable: true
+
+layouts:
+  - layout: page/article/leistung
+    text: Leistungen
+
+forms:
+  - key: sec_name
+    type: text
+    name: Sektionstitel
+    title: Titel in Übersichtseiten. (Max. 30 Zeichen)
+    attrs:
+      maxlength: 30
+
+  - key: sec_desc
+    type: textarea
+    name: Sektionsbeschreibung
+    title: Beschreibung in Übersichtseiten. (Max. 160 Zeichen)
+    attrs:
+      maxlength: 160
+
+  - key: navi_name
+    type: text
+    name: Navigationstitel
+    title: Titel in der Navigation (Max. 30 Zeichen)
+    attrs:
+      maxlength: 30
+
+
+
+defaults:
+  layout: xy

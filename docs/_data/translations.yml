@@ -1,0 +1,164 @@
+'§über uns im footer':
+  _hint: 'Text im Footer (über uns)'
+  de: 'Bereits seit 2012 sind wir für Sie in der Münchener Altstadt vor Ort, direkt am Karlsplatz (Stachus).'
+'§Anfahrtbeschreibung U-Bahn':
+  _hint: 'Geben Sie hier bitte die komplette Anfahrtbeschreibung ein (auch auf Deutsch)'
+  de: 'Bitte Anfahrtsbeschreibung per U-Bahn hier einfügen'
+  ua: 'Проїзд українською мовою'
+'§Anfahrtbeschreibung Auto':
+  _hint: 'Geben Sie hier bitte die komplette Anfahrtbeschreibung ein (auch auf Deutsch)'
+  de: 'Bitte Anfahrtsbeschreibung per Auto hier einfügen'
+  ua: 'Проїзд українською мовою'
+Zahnbehandlung:
+  ua: 'лікування зубів'
+  de: null
+'Das bieten wir Ihnen':
+  ua: 'Ось що ми вам пропонуємо'
+'Wir helfen Ihnen':
+  ua: 'Ми вам допомагаємо'
+'Unser Team':
+  ua: 'Наша команда'
+Anfahrt:
+  ua: прибуття
+'Unsere Praxis':
+  ua: 'Наша практика'
+Leistungen:
+  ua: послуги
+'Unsere Leistungen':
+  ua: послуги
+'Mit der U-Bahn':
+  ua: 'З метро'
+'So finden Sie uns':
+  ua: 'Як нас знайти'
+'Mit dem Auto':
+  ua: Автомобілем
+'In Routenplaner-App öffnen':
+  ua: ' Відкрити в програмі планувальника маршрутів'
+'In Google Maps öffnen':
+  ua: 'Відкрити в google maps'
+Vorname:
+  ua: "Ім'я"
+Nachname:
+  ua: прізвище
+Telefon:
+  ua: телефон
+'Ihre Nachricht':
+  ua: 'Ваше повідомлення'
+Termingrund:
+  ua: 'Причина призначення'
+'Termin vereinbaren':
+  ua: 'призначати зустріч'
+'Diese Woche':
+  ua: 'Цього тижня'
+Später:
+  ua: пізніше
+'Bitte kontaktieren Sie mich per':
+  ua: " Будь ласка, зв'яжіться зі мною через"
+E-Mail:
+  ua: 'електронна пошта'
+'Formular Datenschutz':
+  _hint: 'Text zum Absenden des Kontaktformulars (auch auf Deutsch)'
+  de: 'Daten, die über ein Kontaktformular an uns übermittelt werden, werden ausschließlich zur Bearbeitung Ihres Anliegens verwendet. Nähere Informationen hierzu finden Sie in unseren'
+  ua: 'Дані, передані нам через контактну форму, будуть використовуватися лише для обробки вашого запиту. Додаткову інформацію про це ви можете знайти в нашому'
+Absenden:
+  _hint: 'Kontaktformular Button'
+  ua: Подати
+Direktlinks:
+  ua: 'прямі посилання'
+'Über uns':
+  ua: 'про нас'
+Öffnungszeiten:
+  ua: 'години роботи'
+Kontakt:
+  ua: Контакти
+Mo:
+  _hint: 'Kurzform Wochentag Montag'
+  ua: пн
+Di:
+  _hint: 'Kurzform Wochentag Dienstag'
+  ua: вт
+Mi:
+  _hint: 'Kurzform Wochentag Mittwoch'
+  ua: ср
+Do:
+  _hint: 'Kurzform Wochentag Donnerstag'
+  ua: чет
+Fr:
+  _hint: 'Kurzform Wochentag Freitag'
+  ua: "п'я"
+Sa:
+  _hint: 'Kurzform Wochentag Samstag'
+So:
+  _hint: 'Kurzform Wochentag Sonntag'
+Uhr:
+  _hint: 'Zeitangabe (z.B. 08:00 Uhr)'
+  ua: час
+Montag:
+  _hint: 'Kurzform Wochentag Montag'
+Dienstag:
+  _hint: 'Kurzform Wochentag Dienstag'
+Mittwoch:
+  _hint: 'Kurzform Wochentag Mittwoch'
+Donnerstag:
+  _hint: 'Kurzform Wochentag Donnerstag'
+Freitag:
+  _hint: 'Kurzform Wochentag Freitag'
+Samstag:
+  _hint: 'Kurzform Wochentag Samstag'
+Sonntag:
+  _hint: 'Kurzform Wochentag Sonntag'
+Januar:
+  _hint: Monat
+Februar:
+  _hint: Monat
+März:
+  _hint: Monat
+April:
+  _hint: Monat
+Mai:
+  _hint: Monat
+Juni:
+  _hint: Monat
+Juli:
+  _hint: Monat
+August:
+  _hint: Monat
+September:
+  _hint: Monat
+Oktober:
+  _hint: Monat
+November:
+  _hint: Monat
+Dezember:
+  _hint: Monat
+Herbsturlaub:
+  ua: 'осінні канікули'
+§urlaubsnachricht:
+  de: 'Unsere Praxis ist bis zum 20.05. geschlossen'
+  ua: 'Наша практика не працює до 20.05. ЗАЧИНЕНО.'
+'Unsere Praxis ist geschlossen':
+  ua: 'Наша практика закрита'
+'Unsere Praxis ist geöffnet':
+  ua: 'Наша практика відкрита'
+'Wir öffnen wieder am':
+  ua: 'Ми знову відкриваємо'
+'Jetzt Termin online vereinbaren':
+  ua: 'Запишіться на зустріч онлайн зараз'
+'Ihre Terminvorschläge':
+  ua: 'ваші пропозиції щодо призначення'
+Kontrolle:
+  ua: КОНТРОЛЬ
+Schmerzen:
+  ua: Болі
+Beratung:
+  ua: консультативний
+Ṕrophylaxe:
+  ua: Профілактика
+sonstiges:
+  ua: різне
+'Ihre Kontaktdaten':
+  ua: 'ваші контактні дані'
+'Ihre Nachricht wurde zugestellt. Wir melden uns in den nächsten Tagen bei Ihnen.':
+  ua: "Ваше повідомлення доставлено. Ми зв'яжемося з вами в найближчі кілька днів."
+'Es wurden nicht alle erforderlichen Eingabefelder ausgefüllt':
+  ua: 'Не всі обов’язкові поля для введення заповнено'

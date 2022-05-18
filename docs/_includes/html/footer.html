@@ -1,0 +1,60 @@
+<footer class="bg-dark">
+    <div class="container">
+        <div class="row  pt-8 pb-4 text-white-70 ">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <span class="text-cap text-white mt-5 fs-3">{% include do/trans.html val="Kontakt" %}</span>
+
+                <p class="text-white">
+                    <span>{% include do/trans.html val="Telefon" %}:</span> <a href="tel:{{site.data.general.contact.phone1}}" class="link-light-75 text-white">{{site.data.general.contact.phone1_text}}</a><br>
+                    <span>{% include do/trans.html val="E-Mail" %}:</span> <a href="mailto:{{site.data.general.contact.email}}" class="link-light-75 text-white">{{site.data.general.contact.email}}</a><br>
+                    <a href="" class="link-light-75 text-white">{{ site.data.general.street }} • {{ site.data.general.zip }} {{ site.data.general.city }}</a>
+                </p>
+
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+                <span class="text-cap text-white mt-5 fs-3">{% include do/trans.html val="Öffnungszeiten" %}</span>
+                <!-- List -->
+                <div class="text-white">
+                    {% include el/openhours.html %}
+                </div>
+                <!-- End List -->
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <span class="text-cap text-white mt-5 fs-3">{% include do/trans.html val="Über uns" %}</span>
+                <!-- List -->
+                <p class="text-white">
+                    {% include do/trans.html val="§über uns im footer" %}
+                </p>
+                <!-- End List -->
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <span class="text-cap text-white mt-5 fs-3">{% include do/trans.html val="Direktlinks" %}</span>
+                <!-- List -->
+
+                {% include el/tag-link-list.html ptag="navi-footer" class="link-light-75 text-white d-block" %}
+                <a href="/impressum/" class="link-light-75 text-white d-block"><i class="bi-caret-right-fill me-2"></i> Impressum</a>
+                <a href="/datenschutz/" class="link-light-75 text-white d-block"><i class="bi-caret-right-fill me-2"></i> Datenschutz</a>
+                <!-- End List -->
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Row -->
+
+        <!-- End Row -->
+
+        <div class="row align-items-md-center py-6">
+
+
+            <div class="col-md-auto" style="text-align: right">
+                <p class="fs-5 text-white-70 mb-0">Eine <a href="https://leuffen.de/"><img src="/assets/leuffen-logo-white.svg" style="height: 22px; margin-top:-8px;" alt="leuffen"></a> <a href="https://leuffen.de/arzt-praxis-website/" class="text-white-70">Praxis-Website</a> <span class="text-muted ps-5 text-dark"><a class="text-muted" target="pagebuilder" href="{% include el/pagebuilder-link.html %}">login</a></span></p>
+
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Row -->
+    </div>
+</footer>

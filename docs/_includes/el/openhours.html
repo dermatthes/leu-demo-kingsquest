@@ -1,0 +1,14 @@
+<table leu-translate>
+
+    <tbody>
+    {% for hours in site.data.openhours.table %}
+    <tr>
+        <td class="pe-3 align-text-top">{{ hours.day }}</td>
+        <td>{{ hours.time }}</td>
+        <td>{{ hours.extra }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+

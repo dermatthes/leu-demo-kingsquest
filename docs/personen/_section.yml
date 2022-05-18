@@ -1,0 +1,36 @@
+desc: Teammitglieder & Qualifikation
+ptags:
+  - text: In Team-Sektion anzeigen
+    key: sec-team
+is_sortable: true
+
+layouts:
+  - layout: page/article/person
+    text: Personen
+
+forms:
+  - key: pers_name
+    type: text
+    name: Name
+    title: Name der Person (max. 30 Zeichen)
+    attrs:
+      maxlength: 30
+
+  - key: short_desc
+    type: textarea
+    name: Kurzbeschreibung
+    title: Kurzbeschreibung der Person
+  - key: profession
+    type: text
+    name: Berufsbezeichnung
+    title: Berufsbezeichnung in Übersichtsseiten
+
+  - key: image
+    type: text
+    name: Bildlink
+    title: Bild auf Übersichtsseiten und Detailseite
+
+
+
+defaults:
+  layout: xy

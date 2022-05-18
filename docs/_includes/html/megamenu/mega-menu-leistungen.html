@@ -1,0 +1,31 @@
+<li class="hs-has-mega-menu col-md-2"
+    data-hs-mega-menu-item-options='{
+                            "desktop": {
+                              "maxWidth": "{{ menu.max_width }}"
+                            }
+                          }'>
+    <a id="landingsMegaMenu-leistungen" class="hs-mega-menu-invoker nav-link dropdown-toggle text-center"
+       href="javascript:void(0)" aria-current="page" role="button" aria-expanded="false">
+        {% include do/trans.html val="Leistungen" %}
+    </a>
+    <!-- add hs-position-right to align right -->
+    <div class="hs-mega-menu dropdown-menu" aria-labelledby="landingsMegaMenu-leistungen" style="min-width: 600px;">
+        <!-- Main Content -->
+        <div class="row">
+
+            <div class="col-lg d-none d-lg-block">
+                <div class="d-flex align-items-start flex-column bg-light rounded-3 h-100 p-4">
+                    <h5>{% include do/trans.html val="Unsere Leistungen" class="dropdown-item" %}</h5>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="navbar-dropdown-menu-inner">
+                    <div class="m-3"></div>
+                    {% include el/tag-link-list.html ptag="navi-leistungen" class="dropdown-item" %}
+                </div>
+            </div>
+
+        </div>
+        <!-- End Main Content -->
+    </div>
+</li>

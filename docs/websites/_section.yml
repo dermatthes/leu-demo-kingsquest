@@ -1,0 +1,20 @@
+desc: Websites & Landingpages
+ptags:
+  - text: In Navigationsleiste anzeigen
+    key: show_always
+is_sortable: false
+
+layouts:
+  - layout: page/website/kingsquest
+    text: Kingsquest Layout Master
+
+forms:
+  - key: navi_title
+    type: text
+    name: Titel in der Navigation
+    title: Wenn der Page-Tag In Navigationsleiste anzeigen aktiv ist, diesen wert als Titel nehmen. (Max. 30 Zeichen)
+    attrs:
+      maxlength: 30
+
+defaults:
+  layout: xy
