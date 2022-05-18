@@ -1,7 +1,7 @@
 ---
 pid: leistungen/diagnostik
 lang: de
-title: Diagnostik in München
+title: Diagnostik
 layout: page/article/leistung
 description: |
     In unserer Praxis bieten wir Ihnen die modernsten Geräte und Instrumente zur exakten Diagnostik an.

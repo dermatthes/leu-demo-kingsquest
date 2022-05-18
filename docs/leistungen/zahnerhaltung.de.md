@@ -19,13 +19,13 @@ sec_desc: |-
 sec_icon: /assets/ico/dent/di-zahnschmerz.png
 sec_name: Zahnerhaltung
 sortindex: 3
-title: Wurzelbehandlung & Füllungen in München
+title: Wurzelbehandlung & Füllungen 
 ---
 
 
 <section class="content-space-b-2 bg-light"><div class="container" container></div></section>
 
-#  Wurzelbehandlung & Füllungen in München
+#  Wurzelbehandlung & Füllungen 
 
 Ergibt sich durch die Diagnostik eine Erkrankung oder Beschädigung der Zähne oder des Zahnhalteapparates, wenden wir verschiedene Methoden der Behandlung an. Ziel ist es, die "eigenen" Zähne zu erhalten, solange dies medizinisch vertretbar ist. Fällt die Prognose ungünstiger aus muss auch über eine Zahnentfernung gesprochen werden.
 

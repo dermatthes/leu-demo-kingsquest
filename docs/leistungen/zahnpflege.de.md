@@ -24,7 +24,7 @@ title: Prophylaxe in München
 
 <section class="content-space-b-2 bg-light"><div class="container" container></div></section>
 
-# Prophylaxe in München
+# Prophylaxe
 
 Neben der täglichen Pflege Zuhause stellt hier die regelmäßige Prophylaxe (Professionelle Zahnreinigung) beim Zahnarzt eine wichtige Säule im Kampf gegen hartnäckige Beläge, aggressive Säuren und schädliche Bakterien dar.
 

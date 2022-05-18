@@ -1,7 +1,7 @@
 ---
 lang: de
 pid: leistungen/zahnersatz
-title: Kronen in München
+title: Kronen
 layout: page/article/leistung
 article_img: /assets/img/default-bg.jpg
 description: |
@@ -24,7 +24,7 @@ sec_desc: |
 
 <section class="content-space-b-2 bg-light"><div class="container" container></div></section>
 
-# Kronen in München
+# Kronen
 
 Bei stark beschädigten oder fehlenden Zähnen (Zahnlücken) kann der Kauapparat durch den Einsatz von Zahnersatz aus unterschiedlichsten Materialien (Kunststoff, Metall, Teilkeramik, Vollkeramik) wieder zu vollständiger Funktionalität und Ästhetik aufgebaut werden. Wir bieten je nach Fall die folgenden Möglichkeiten im Bereich Zahnersatz an:
 

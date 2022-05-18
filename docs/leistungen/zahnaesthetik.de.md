@@ -1,7 +1,7 @@
 ---
 lang: de
 pid: leistungen/zahnaesthetik
-title: Bleaching in München
+title: Bleaching
 layout: page/article/leistung
 article_img: /assets/img/default-bg.jpg
 description: |
@@ -22,7 +22,7 @@ sec_desc: |
 
 <section class="content-space-b-2 bg-light"><div class="container" container></div></section>
 
-#  Bleaching in München
+#  Bleaching
 
 Strahlend weiße Zähne wirken ästhetisch, erhöhen die Ausstrahlung und unterstützen einen positiven Gesamteindruck. Jeder hat grundsätzlich einen individuellen Zahnfarbton, der durch Bleaching deutlich verbessert werden kann.
 
