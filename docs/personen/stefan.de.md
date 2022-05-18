@@ -2,7 +2,7 @@
 description: ""
 image: assets/user/dentist1.jpg
 lang: de
-layout: pages/article/person
+layout: page/article/person
 order: 2
 pers_name: Stefan Muster
 pid: personen/stefan
