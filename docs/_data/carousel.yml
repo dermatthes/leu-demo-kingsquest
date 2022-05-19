@@ -1,4 +1,4 @@
-interval: 6000
+interval: 4000
 items:
   - src: assets/user/slide1.jpg
     alt: Röntgenraum
