@@ -1,11 +1,11 @@
 <section class="bg-dark">
 
-    <div id="carousel1" class="carousel slide container" data-bs-ride="carousel" style="min-height: 290px;max-height: 600px;overflow: hidden">
+    <div id="carousel1" class="carousel slide" data-bs-ride="carousel" style="min-height: 290px;max-height: 800px;overflow: hidden">
         <div class="carousel-inner">
             {% for item in site.data.carousel.items %}
                 <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="{{ site.data.carousel.interval }}">
 
-                    <img src="{{ site.baseurl }}{{ item.src }}" class="d-block w-100" alt="{{ item.alt }}">
+                    <img src="{{ site.baseurl }}{{ item.src }}" class="d-block ratio ratio-16x9"  alt="{{ item.alt }}">
                     {% if item.caption != null %}
                         <div class="carousel-caption d-none d-md-block">
                             <h5>{{ item.caption }}</h5>
