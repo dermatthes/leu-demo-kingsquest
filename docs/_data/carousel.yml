@@ -2,7 +2,7 @@ interval: 6000
 items:
   - src: assets/user/slide1.jpg
     alt: Röntgenraum
-    caption: "Röntgenraum"
+
   - src: assets/user/slide2.jpg
     alt: Empfang
   - src: assets/user/slide3.jpg
