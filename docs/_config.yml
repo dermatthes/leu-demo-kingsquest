@@ -8,6 +8,7 @@ show_downloads: true
 permalink: pretty
 #exclude: ['assets']
 
+
 sass:
   sass_dir: _sass_disabled
 
