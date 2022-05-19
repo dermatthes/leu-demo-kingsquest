@@ -13,16 +13,40 @@
     <table style="background-color: #FFFFFF; width: 100%; max-width: 800px; font-family: sans-serif" width="100%" cellspacing="0" cellpadding="0" border="0">
         <tbody>
             <tr style="background-color: lightblue;">
-                <td colspan="2">Onlineanfrage</td>
+                <td colspan="2"><b>Terminanfrage</b></td>
             </tr>
 
             <tr>
-                <td>Name:</td>
-                <td>Wert<br>Wert2</td>
+                <td>Termingrund:</td>
+                <td>{= termingrund}</td>
+            </tr>
+            {for curTermin in termin}
+            <tr>
+                <td>Terminwunsch {= @index1}:</td>
+                <td>
+                    {= curTermin}
+                </td>
+            </tr>
+            {/for}
+             <tr>
+                <td>Vorname:</td>
+                <td>{= vorname}</td>
             </tr>
             <tr>
-                <td>Name:</td>
-                <td>Wert<br>Wert2</td>
+                <td>Nachname:</td>
+                <td>{= nachname}</td>
+            </tr>
+            <tr>
+                <td>Telefon:</td>
+                <td>{= telefon}</td>
+            </tr>
+            <tr>
+                <td>E-Mail:</td>
+                <td>{= email}</td>
+            </tr>
+            <tr>
+                <td>Nachricht:</td>
+                <td>{= nachricht}</td>
             </tr>
         </tbody>
     </table>
